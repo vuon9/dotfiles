@@ -2,7 +2,7 @@
 
 # Use rsync to sync the dotfiles
 whitelist=("fish" "kitty")
-whitelistFiles=(".gitconfig")
+whitelistFiles=(".gitconfig" ".golangci.yml")
 sourceDir="$HOME/.config"
 
 echo "Started syncing folders in $sourceDir"
