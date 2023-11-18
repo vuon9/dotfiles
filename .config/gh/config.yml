@@ -10,7 +10,7 @@ pager:
 aliases:
     co: pr checkout
     ce: copilot explain
-    "!!": copilot suggest -t shell
+    '!!': copilot suggest -t shell
     git!: copilot suggest -t git
     gh!: copilot suggest -t gh
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
