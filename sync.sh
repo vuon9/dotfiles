@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Use rsync to sync the dotfiles
-whitelist=("fish" "kitty")
+whitelist=("fish" "kitty" "gh" "gh-copilot")
 whitelistFiles=(".gitconfig" ".golangci.yml")
 sourceDir="$HOME/.config"
 

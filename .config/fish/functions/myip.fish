@@ -8,5 +8,5 @@ function myip
             set CURRENT_IP_INFO (curl -s https://ipv4.wtfismyip.com/json)
     end
 
-    echo $CURRENT_IP_INFO
+    echo $CURRENT_IP_INFO | jq .
 end
