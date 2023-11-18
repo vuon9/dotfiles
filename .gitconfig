@@ -1,0 +1,51 @@
+[core]
+  pager = delta
+
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Monokai Extended
+  navigate = true
+  line-numbers = true
+  side-by-side = true
+  line-numbers-left-format = ""
+  line-numbers-right-format = "│ "
+
+[interactive]
+  diffFilter = delta --color-only
+
+[pull]
+  rebase = false
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = "gpg"
+
+[github]
+	user = "vuon9"
+
+[core]
+	sshCommand = "ssh -i ~/.ssh/id_rsa"
+
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+
+[filter "cleanFishVars"]
+	clean = awk '!/SETUVAR _.*/{print}'
+
+[diff "fish_variables"]
+	textconv = awk '!/SETUVAR _.*/{print}'
+
+[include]
+	path = ~/.github-gitconfig

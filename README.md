@@ -15,6 +15,7 @@ It's for my own use, mostly for simple setup of my dev environment.
     - [bass](https://github.com/edc/bass): Make Bash utilities usable in Fish shell
     - [nvm-fish](https://github.com/jorgebucaran/nvm.fish): Node Version Manager for Fish Shell
     - [fish-gvm](https://github.com/JGAntunes/fish-gvm): Go Version Manager for Fish Shell
+    - [github-copilot-cli.fish](https://github.com/z11i/github-copilot-cli.fish): Make GitHub Copilot CLI's alias work for Fish shell. The current Copilot CLI in beta only supports bash-like syntax.
 - [delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git diff
 - [commitizen](https://github.com/commitizen/cz-cli): The commitizen command line utility
 
