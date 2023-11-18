@@ -7,7 +7,7 @@ sourceDir="$HOME/.config"
 
 echo "Started syncing folders in $sourceDir"
 for item in "${whitelist[@]}"; do
-    destDir=".config/$item"
+    destDir=".config"
     rsync -a --delete "$sourceDir/$item" "$destDir"
     echo "Synced dir: $sourceDir/$item -> $destDir"
 done
