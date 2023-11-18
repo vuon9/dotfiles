@@ -2,10 +2,14 @@
 
 It's for my own use, mostly for simple setup of my dev environment.
 
-## Apps
+## Tools
+- [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
 - [homebrew](https://brew.sh/): The missing package manager for macOS
 - [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
 - [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
+- [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+- [gvm](https://github.com/moovweb/gvm): Go Version Manager
+- [golangci-lint](https://golangci-lint.run/): Fast linters runner for Go
 
 ## Terminal and plugins
 - [kitty](https://sw.kovidgoyal.net/kitty/): A cross-platform, fast, feature full, GPU based terminal emulator
