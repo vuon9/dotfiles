@@ -12,6 +12,7 @@ It's for my own use, mostly for simple setup of my dev environment.
 - [golangci-lint](https://golangci-lint.run/): Fast linters runner for Go
 - [gh](https://cli.github.com/): GitHub’s official command line tool
     - `gh-copilot`: GitHub Copilot is your AI pair programmer
+- [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/): Fontconfig is a library for configuring and customizing font access
 
 ## Terminal and plugins
 - [kitty](https://sw.kovidgoyal.net/kitty/): A cross-platform, fast, feature full, GPU based terminal emulator
