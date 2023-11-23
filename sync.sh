@@ -5,14 +5,17 @@ whitelist=("fish" "kitty" "gh" "gh-copilot" "fontconfig")
 whitelistFiles=(".gitconfig" ".golangci.yml")
 sourceDir="$HOME/.config"
 
-echo "Started syncing folders in $sourceDir"
+destDir=".config"
+
+echo ""
+echo "Syncing dotfiles from $sourceDir to $destDir:\n"
 for item in "${whitelist[@]}"; do
-    destDir=".config"
     rsync -a --delete "$sourceDir/$item" "$destDir"
-    echo "Synced dir: $sourceDir/$item -> $destDir"
+    echo "* $sourceDir/$item -> DONE"
 done
 for item in "${whitelistFiles[@]}"; do
     cp -f "$HOME/$item" "$item"
-    echo "Synced file: $HOME/$item -> $item"
+    echo "* $HOME/$item -> DONE"
 done
-echo "Everything is synced now.\n"
+
+echo "\nEverything is synced now.\n"
