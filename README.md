@@ -2,6 +2,14 @@
 
 It's for my own use, mostly for simple setup of my dev environment.
 
+## Backup & copy
+
+Backup and use Kitty config from this folder:
+```bash
+mv ~/.config/kitty ~/.config/kitty.bak
+ln -s /path/to/this/kitty ~/.config/kitty
+```
+
 ## Tools
 - [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
 - [homebrew](https://brew.sh/): The missing package manager for macOS
