@@ -6,13 +6,19 @@ It's for my own use, mostly for simple setup of my dev environment.
 
 Backup and use Kitty config from this folder:
 ```bash
+# Backup current config
 mv ~/.config/kitty ~/.config/kitty.bak
-ln -s /path/to/this/kitty ~/.config/kitty
+mv ~/.config/fish ~/.config/fish.bak
+
+# Apply config from this folder as symlink
+ln -s /path/to/dotfiles/kitty ~/.config/kitty
+ln -s /path/to/dotfiles/fish ~/.config/fish
 ```
 
 ## Tools
 - [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
 - [homebrew](https://brew.sh/): The missing package manager for macOS
+- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
 - [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
 - [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
@@ -29,7 +35,6 @@ ln -s /path/to/this/kitty ~/.config/kitty
     - `ilancosman/tide@v6`: A modern prompt manager for the Fish shell
     - `edc/bass`: Make Bash utilities usable in Fish shell
     - `jgantunes/fish-gvm`: Fish plugin for GVM
-    - `jethrokuan/z`: A new cd command that helps you navigate faster by learning your habits
     - `franciscolourenco/done`: Automatically receive notifications when long-running commands finish
     - `kenji-miyake/reload.fish`: Reload fish shell configuration
 - [delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git diff
