@@ -16,17 +16,16 @@ ln -s /path/to/dotfiles/fish ~/.config/fish
 ```
 
 ## Tools
-- [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
 - [homebrew](https://brew.sh/): The missing package manager for macOS
-- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
-- [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
-- [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
+- [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
+
+## Development tools
 - [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 - [gvm](https://github.com/moovweb/gvm): Go Version Manager
 - [golangci-lint](https://golangci-lint.run/): Fast linters runner for Go
 - [gh](https://cli.github.com/): GitHub’s official command line tool
     - `gh-copilot`: GitHub Copilot is your AI pair programmer
-- [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/): Fontconfig is a library for configuring and customizing font access
+- [commitizen](https://github.com/commitizen/cz-cli): The commitizen command line utility
 
 ## Terminal and plugins
 - [kitty](https://sw.kovidgoyal.net/kitty/): A cross-platform, fast, feature full, GPU based terminal emulator
@@ -38,7 +37,10 @@ ln -s /path/to/dotfiles/fish ~/.config/fish
     - `franciscolourenco/done`: Automatically receive notifications when long-running commands finish
     - `kenji-miyake/reload.fish`: Reload fish shell configuration
 - [delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git diff
-- [commitizen](https://github.com/commitizen/cz-cli): The commitizen command line utility
+- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
+- [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
+- [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
+- [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/): Fontconfig is a library for configuring and customizing font access
 
 ## Notes
 
