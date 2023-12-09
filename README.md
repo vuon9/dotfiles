@@ -2,8 +2,7 @@
 
 It's for my own use, mostly for simple setup of my dev environment.
 
-## Backup & copy
-
+## To use configs
 Backup and use Kitty config from this folder:
 ```bash
 # Backup current config
@@ -14,6 +13,12 @@ mv ~/.config/fish ~/.config/fish.bak
 ln -s /path/to/dotfiles/kitty ~/.config/kitty
 ln -s /path/to/dotfiles/fish ~/.config/fish
 ```
+
+## To install Brewfile
+```bash
+brew bundle --file=~/path/to/dotfiles/Brewfile
+```
+Readmore: https://kevinmgrimes.com/post/homebrew-macos/
 
 ## Tools
 - [homebrew](https://brew.sh/): The missing package manager for macOS
