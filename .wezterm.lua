@@ -5,7 +5,7 @@ local mux = wezterm.mux
 -- Startup commands
 wezterm.on('gui-startup', function(cmd)
     local tab, pane, window = mux.spawn_window(cmd or {})
-    window:gui_window():set_position(288, 211)
+    window:gui_window():maximize()
 end)
 
 -- and finally, return the configuration to wezterm
