@@ -42,7 +42,7 @@ I use [CommitMono](https://github.com/eigilnikolajsen/commit-mono) but I customi
 2. To use it in editor, terminal, etc. need to set it 'CommitMono-Vng' as the font name.
 
 ## List of softwares
-- [wezterm](https://wezfurlong.org/wezterm/): A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+- [kitty](https://sw.kovidgoyal.net/kitty/): A cross-platform, fast, feature full, GPU based terminal emulator
 - [fish](https://fishshell.com/): The friendly interactive shell. The plugins may need to be installed manually:
     - `jorgebucaran/fisher`: A plugin manager for Fish
     - `ilancosman/tide@v6`: A modern prompt manager for the Fish shell
@@ -53,6 +53,8 @@ I use [CommitMono](https://github.com/eigilnikolajsen/commit-mono) but I customi
 - [delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git diff
 - [fd](https://github.com/sharkdp/fd): To search files and directories by name
 - [ripgrep](https://github.com/BurntSushi/ripgrep): To search files and directories by content
+- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
+- [wezterm](https://wezfurlong.org/wezterm/) *Experimental*: A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 
 ### Language version management tools
 - [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
