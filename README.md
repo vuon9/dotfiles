@@ -1,24 +1,24 @@
 # My Dotfiles
-It's for my own use, mostly for simple setup of my dev environment.
+It's for my own use, on 💻 MacOS, mostly for simple setup of my 🧑🏼‍💻 dev environment.
 
 ## Pre-requisites
-Install [homebrew](https://brew.sh/) and see all packages in [Brewfile](./Brewfile)
+Install [homebrew](https://brew.sh/) and see all packages in `./Brewfile`
 
 ### Clone this repository
 ```bash
 git clone https://github.com/vuon9/dotfiles.git
 ```
 
-### To install softwares via Brewfile
+### To install softwares
 To have the terminal, shell, and command-line tools configured, run the following command:
 
 ```bash
 brew bundle --file=~/path/to/dotfiles/Brewfile
 ```
-[Readmore](https://kevinmgrimes.com/post/homebrew-macos/) to know how to use it properly.
+[Read more](https://kevinmgrimes.com/post/homebrew-macos/) and [also this](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f) to understand Brewfile usages and tips.
 
 ### To use dotfiles
-After having all softwares installed, you can use the dotfiles by symlinking them to the home directory.
+After having all softwares installed, can use the dotfiles by symlinking them to the home directory.
 
 ```bash
 # Backup current config
@@ -31,10 +31,15 @@ ln -s /path/to/dotfiles/fish ~/.config/fish
 ln -s /path/to/dotfiles/.gitconfig ~/.gitconfig
 ln -s /path/to/dotfiles/.wezterm.lua ~/.config/.wezterm.lua
 
-# Optional
+# Addtional in case using Go
 mv ~/.golangci.yml ~/.golangci.yml.bak
 ln -s /path/to/dotfiles/.golangci.yml ~/.golangci.yml
 ```
+
+### Customized CommitMono font
+I use [CommitMono](https://github.com/eigilnikolajsen/commit-mono) but I customized it a bit to make it more readable with my personal preference. Can find the font in `./fonts` folder.
+1. To install the font, just double click on the font file and click `Install Font` button.
+2. To use it in editor, terminal, etc. need to set it 'CommitMono-Vng' as the font name.
 
 ## List of softwares
 - [wezterm](https://wezfurlong.org/wezterm/): A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
