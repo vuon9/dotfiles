@@ -51,9 +51,8 @@ I use [CommitMono](https://github.com/eigilnikolajsen/commit-mono) but I customi
     - `franciscolourenco/done`: Automatically receive notifications when long-running commands finish
     - `kenji-miyake/reload.fish`: Reload fish shell configuration
 - [delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git diff
-- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
-- [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
-- [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
+- [fd](https://github.com/sharkdp/fd): To search files and directories by name
+- [ripgrep](https://github.com/BurntSushi/ripgrep): To search files and directories by content
 
 ### Language version management tools
 - [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
