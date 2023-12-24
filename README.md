@@ -1,39 +1,43 @@
 # My Dotfiles
-
 It's for my own use, mostly for simple setup of my dev environment.
 
-## To use configs
-Backup and use Kitty config from this folder:
-```bash
-# Backup current config
-mv ~/.config/kitty ~/.config/kitty.bak
-mv ~/.config/fish ~/.config/fish.bak
+## Pre-requisites
+Install [homebrew](https://brew.sh/) and see all packages in [Brewfile](./Brewfile)
 
-# Apply config from this folder as symlink
-ln -s /path/to/dotfiles/kitty ~/.config/kitty
-ln -s /path/to/dotfiles/fish ~/.config/fish
+### Clone this repository
+```bash
+git clone https://github.com/vuon9/dotfiles.git
 ```
 
-## To install Brewfile
+### To install softwares via Brewfile
+To have the terminal, shell, and command-line tools configured, run the following command:
+
 ```bash
 brew bundle --file=~/path/to/dotfiles/Brewfile
 ```
-Readmore: https://kevinmgrimes.com/post/homebrew-macos/
+[Readmore](https://kevinmgrimes.com/post/homebrew-macos/) to know how to use it properly.
 
-## Tools
-- [homebrew](https://brew.sh/): The missing package manager for macOS
-- [rsync](https://rsync.samba.org/): A fast, versatile, remote (and local) file-copying tool
+### To use dotfiles
+After having all softwares installed, you can use the dotfiles by symlinking them to the home directory.
 
-## Development tools
-- [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
-- [gvm](https://github.com/moovweb/gvm): Go Version Manager
-- [golangci-lint](https://golangci-lint.run/): Fast linters runner for Go
-- [gh](https://cli.github.com/): GitHub’s official command line tool
-    - `gh-copilot`: GitHub Copilot is your AI pair programmer
-- [commitizen](https://github.com/commitizen/cz-cli): The commitizen command line utility
+```bash
+# Backup current config
+mv ~/.config/fish ~/.config/fish.bak
+mv ~/.gitconfig ~/.gitconfig.bak
+mv ~/.config/.wezterm.lua ~/.config/.wezterm.lua.bak
 
-## Terminal and plugins
-- [kitty](https://sw.kovidgoyal.net/kitty/): A cross-platform, fast, feature full, GPU based terminal emulator
+# Apply config from this folder as symlink
+ln -s /path/to/dotfiles/fish ~/.config/fish
+ln -s /path/to/dotfiles/.gitconfig ~/.gitconfig
+ln -s /path/to/dotfiles/.wezterm.lua ~/.config/.wezterm.lua
+
+# Optional
+mv ~/.golangci.yml ~/.golangci.yml.bak
+ln -s /path/to/dotfiles/.golangci.yml ~/.golangci.yml
+```
+
+## List of softwares
+- [wezterm](https://wezfurlong.org/wezterm/): A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 - [fish](https://fishshell.com/): The friendly interactive shell
     - `jorgebucaran/fisher`: A plugin manager for Fish
     - `ilancosman/tide@v6`: A modern prompt manager for the Fish shell
@@ -45,14 +49,8 @@ Readmore: https://kevinmgrimes.com/post/homebrew-macos/
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [fd](https://github.com/sharkdp/fd): fd is a simple, fast and user-friendly alternative to find
 - [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
-- [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/): Fontconfig is a library for configuring and customizing font access
 
-## Notes
-
-Template for `.github-gitconfig`:
-
-```properties
-[user]
-	name = 'Your name'
-	email = 'your-noreply-email'
-```
+### Language version management tools
+- [nvm](https://github.com/nvm-sh/nvm): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+- [gvm](https://github.com/moovweb/gvm): Go Version Manager
+- [brew-php-switcher](https://github.com/philcook/brew-php-switcher): Use alias `phpvm` to switch between PHP versions installed via Homebrew
