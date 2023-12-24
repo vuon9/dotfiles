@@ -25,11 +25,13 @@ After having all softwares installed, can use the dotfiles by symlinking them to
 mv ~/.config/fish ~/.config/fish.bak
 mv ~/.gitconfig ~/.gitconfig.bak
 mv ~/.config/.wezterm.lua ~/.config/.wezterm.lua.bak
+mv ~/.config/kitty ~/.config/kitty.bak
 
 # Apply config from this folder as symlink
 ln -s /path/to/dotfiles/fish ~/.config/fish
 ln -s /path/to/dotfiles/.gitconfig ~/.gitconfig
 ln -s /path/to/dotfiles/.wezterm.lua ~/.config/.wezterm.lua
+ln -s /path/to/dotfiles/kitty ~/.config/kitty
 
 # Addtional in case using Go
 mv ~/.golangci.yml ~/.golangci.yml.bak
