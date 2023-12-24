@@ -43,7 +43,7 @@ I use [CommitMono](https://github.com/eigilnikolajsen/commit-mono) but I customi
 
 ## List of softwares
 - [wezterm](https://wezfurlong.org/wezterm/): A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
-- [fish](https://fishshell.com/): The friendly interactive shell
+- [fish](https://fishshell.com/): The friendly interactive shell. The plugins may need to be installed manually:
     - `jorgebucaran/fisher`: A plugin manager for Fish
     - `ilancosman/tide@v6`: A modern prompt manager for the Fish shell
     - `edc/bass`: Make Bash utilities usable in Fish shell
