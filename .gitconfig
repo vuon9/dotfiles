@@ -1,41 +1,37 @@
 [core]
   pager = delta
-
-[delta]
-  plus-style = "syntax #012800"
-  minus-style = "syntax #340001"
-  syntax-theme = Monokai Extended
-  navigate = true
-  line-numbers = true
-  side-by-side = true
-  line-numbers-left-format = ""
-  line-numbers-right-format = "│ "
+  editor = code --wait
+	sshCommand = "ssh -i ~/.ssh/id_rsa"
 
 [interactive]
-  diffFilter = delta --color-only
+	diffFilter = delta --color-only --features=interactive
 
-[pull]
-  rebase = false
+[delta]
+  features = decorations
+
+[delta "interactive"]
+	keep-plus-minus-markers = false
+
+[delta "decorations"]
+	commit-decoration-style = blue ol
+	commit-style = raw
+	file-style = omit
+	hunk-header-decoration-style = blue box
+	hunk-header-file-style = red
+	hunk-header-line-number-style = "#067a00"
+	hunk-header-style = file line-number syntax
 
 [commit]
 	gpgsign = true
 
-[gpg]
-	program = "gpg"
-
-[github]
-	user = "vuon9"
-
-[core]
-	sshCommand = "ssh -i ~/.ssh/id_rsa"
-
-[init]
-	defaultBranch = main
+[pull]
+  rebase = false
 
 [push]
 	autoSetupRemote = true
 
 [alias]
+  mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 	co = checkout
 	br = branch
 	ci = commit
@@ -47,5 +43,8 @@
 [diff "fish_variables"]
 	textconv = awk '!/SETUVAR _.*/{print}'
 
-[include]
-	path = ~/.github-gitconfig
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+  path = ~/.gitconfig-github
+
+[includeIf "hasconfig:remote.*.url:https://github.com/*/**"]
+  path = ~/.gitconfig-github
