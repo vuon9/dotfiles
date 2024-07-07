@@ -8,3 +8,10 @@ set -gx FONTCONFIG_PATH $HOME/.config/fontconfig
 set fish_greeting
 # Created by `pipx` on 2024-01-14 14:54:32
 set PATH $PATH /Users/vuong/.local/bin
+
+# pnpm
+set -gx PNPM_HOME "/Users/vuong/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
