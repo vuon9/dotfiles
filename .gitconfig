@@ -35,6 +35,11 @@
 	br = branch
 	ci = commit
 	st = status
+	sw = switch
+	wt = worktree
+	sta = stash
+	stap = stash pop
+	alias = config --get-regexp ^alias
 
 [filter "cleanFishVars"]
 	clean = awk '!/SETUVAR _.*/{print}'
