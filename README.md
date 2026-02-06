@@ -2,9 +2,10 @@
 It's for my own use, on 💻 MacOS just for quickly have my dev environment quick 🧑🏼‍💻.
 
 It includes:
-    - Brew packages list
-    - Dotfiles
-    - Utility script `_script/*`
+    
+- Brew packages list
+- Dotfiles
+- Utility script `_script/*`
 
 ### Install packages from Brewfile
 
