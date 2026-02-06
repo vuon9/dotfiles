@@ -13,6 +13,9 @@ theme = Nightfox
 background = 282c34
 foreground = ffffff
 
+background-opacity = 0.9
+background-blur-radius = 40
+
 ### Window
 
 ### Font
