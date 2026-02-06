@@ -36,7 +36,6 @@ Make symlinks from existing config
 
 ```bash
 cd dotfiles
-
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/kitty ~/.config/kitty
 ```
