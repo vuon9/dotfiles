@@ -10,5 +10,6 @@ if [ ! -s ~/.config/$MDF ]; then
     exit 1
 fi
 
-mv ~/.config/$MDF .; ln -s $(pwd)/$MDF ~/.config/$MDF
+mv ~/.config/$MDF .
+ln -s $(pwd)/.config/$MDF ~/.config/$MDF
 echo "Done"
