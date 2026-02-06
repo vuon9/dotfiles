@@ -2,4 +2,4 @@
 
 rm -rf Brewfile \
 && brew bundle dump  \
-&& sed -i '' -e '/^vscode/d' Brewfile
+&& sed -E -i '' -e '/^(vscode|go|cargo)/d' Brewfile
