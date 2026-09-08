@@ -1,25 +1,7 @@
 [core]
-	pager = delta
-	editor = nvim
+	pager = hunk pager
+	editor = code
 	sshCommand = "ssh -i ~/.ssh/id_rsa"
-
-[interactive]
-	diffFilter = delta --color-only --features=interactive
-
-[delta]
-  features = decorations
-
-[delta "interactive"]
-	keep-plus-minus-markers = false
-
-[delta "decorations"]
-	commit-decoration-style = blue ol
-	commit-style = raw
-	file-style = omit
-	hunk-header-decoration-style = blue box
-	hunk-header-file-style = red
-	hunk-header-line-number-style = "#067a00"
-	hunk-header-style = file line-number syntax
 
 [commit]
 	gpgsign = true
@@ -40,6 +22,21 @@
 	sta = stash
 	stap = stash pop
 	alias = config --get-regexp ^alias
+	hdiff = -c core.pager=\"hunk pager\" diff
+	hshow = -c core.pager=\"hunk pager\" show
 
 [includeIf "hasconfig:remote.*.url:*@github.com:*/**"]
 	path = ~/.gitconfig-github
+[user]
+	signingkey = 19F7DA5FD1A25B06
+	name = Vuong
+	email = 3168632+vuon9@users.noreply.github.com
+
+[diff]
+	tool = hunk
+
+[difftool "hunk"]
+	cmd = hunk difftool \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+
+[difftool]
+	prompt = false
