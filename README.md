@@ -30,7 +30,13 @@ Make symlinks from existing config
 ```bash
 cd dotfiles
 ln -s $(pwd)/.gitconfig ~/.gitconfig
-ln -s $(pwd)/.config/kitty ~/.config/kitty
+
+# Then all config for all supported app
+ln -s $(pwd)/.config ~/.config
+
+# OR choosing apps one-by-one
+# ln -s $(pwd)/.config/kitty ~/.config/kitty
+# ln -s $(pwd)/.config/ghostty ~/.config/ghostty
 ```
 
 Make current real config folder into dotfiles and symlink it back to its original place
